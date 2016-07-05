@@ -1,7 +1,7 @@
 package com.stnetix.cloudraid.api;
 
+import com.codahale.metrics.MetricSet;
 import com.stnetix.cloudraid.model.CloudObject;
-import com.stnetix.cloudraid.model.StatByObject;
 
 /**
  * API for collect statistic info
@@ -9,6 +9,6 @@ import com.stnetix.cloudraid.model.StatByObject;
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
 public interface IStatisticApi {
-    StatByObject getStatByObject(CloudObject object);
-    boolean setStatByObject(CloudObject object, StatByObject stat);
+    MetricSet getStatByObject(CloudObject object);
+    boolean setStatByObject(CloudObject object, MetricSet metrics);
 }

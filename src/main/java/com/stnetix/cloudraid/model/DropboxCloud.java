@@ -9,8 +9,8 @@ import java.net.URL;
  */
 public class DropboxCloud extends ExternalCloud {
 
-    public DropboxCloud(URL cloudUrl, SupportedClouds cloudType) {
-        super(cloudUrl, cloudType);
+    public DropboxCloud(URL cloudUrl) {
+        super(cloudUrl, SupportedClouds.DROPBOX);
     }
 
     @Override

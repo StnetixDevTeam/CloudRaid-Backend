@@ -14,6 +14,6 @@ public interface ICloudManagerApi extends ICloudRaidAPI {
     String addExternalCloud(ExternalCloud cloud);
     boolean delExternalCloud(ExternalCloud cloud);
     List<ExternalCloud> getExternalCloudsLists();
-    List<ExternalCloudSettings<String, String>> getSettingsByExternalCloud(ExternalCloud cloud);
-    boolean setSettingsByExternalCloud(ExternalCloud cloud, List<ExternalCloudSettings<String,String>> settings);
+    List<ExternalCloudSettings> getSettingsByExternalCloud(ExternalCloud cloud);
+    boolean setSettingsByExternalCloud(ExternalCloud cloud, List<ExternalCloudSettings> settings);
 }
