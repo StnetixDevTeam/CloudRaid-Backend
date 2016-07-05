@@ -1,2 +1,2 @@
 # CloudRaid-Backend
-Backend servce for CloudRaid project
+Backend service for CloudRaid project

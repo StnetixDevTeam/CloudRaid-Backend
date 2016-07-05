@@ -1,0 +1,17 @@
+group 'com.stnetix.cloudraid'
+version '0.1'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.googlecode.json-simple:json-simple:1.1.1'
+    compile 'com.yandex.android:disk-restapi-sdk:1.03'
+    compile 'com.dropbox.core:dropbox-core-sdk:2.0.5'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
