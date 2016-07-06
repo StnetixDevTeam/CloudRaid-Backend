@@ -1,6 +1,11 @@
 package com.stnetix.cloudraid.model;
 
+import com.stnetix.cloudraid.util.Crypto;
+
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * Settings by external clouds
@@ -12,18 +17,14 @@ public class ExternalCloudSettings {
     private SupportedClouds cloudType;
     private AccessToken token;
     private ConnectionState state;
+    private String login;
+    private String password;
 
-    public ExternalCloudSettings(URL cloudUrl, SupportedClouds cloudType, AccessToken token) {
+    public ExternalCloudSettings(URL cloudUrl, SupportedClouds cloudType, String login, String password) {
         this.cloudUrl = cloudUrl;
         this.cloudType = cloudType;
-        this.token = token;
-        this.state = ConnectionState.DISCONECTED;
-    }
-
-    public ExternalCloudSettings(URL cloudUrl, SupportedClouds cloudType) {
-        this.cloudUrl = cloudUrl;
-        this.cloudType = cloudType;
-        this.state = ConnectionState.DISCONECTED;
+        this.login = login;
+        this.password = Crypto.getSha256(password);
     }
 
     public URL getCloudUrl() {
@@ -56,5 +57,21 @@ public class ExternalCloudSettings {
 
     public void setState(ConnectionState state) {
         this.state = state;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = Crypto.getSha256(password);
     }
 }

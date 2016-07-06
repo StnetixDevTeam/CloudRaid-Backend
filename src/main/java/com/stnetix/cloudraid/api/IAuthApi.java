@@ -3,11 +3,11 @@ package com.stnetix.cloudraid.api;
 import com.stnetix.cloudraid.model.AccessToken;
 
 /**
- * API for authentification REST client on external clouds
+ * API for authentification client on CloudRaid service
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
 public interface IAuthApi extends ICloudRaidAPI {
-    AccessToken getAuthToken();
+    AccessToken getAuthToken(); //FIXME: param?
     boolean logout(AccessToken token);
 }

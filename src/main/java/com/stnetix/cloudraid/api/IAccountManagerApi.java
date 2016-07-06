@@ -1,7 +1,7 @@
 package com.stnetix.cloudraid.api;
 
 /**
- * API for manage user accounts
+ * API for manage user accounts on CloudRaid service
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */

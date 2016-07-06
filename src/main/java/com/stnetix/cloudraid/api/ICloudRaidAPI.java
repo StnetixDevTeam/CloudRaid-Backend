@@ -1,7 +1,7 @@
 package com.stnetix.cloudraid.api;
 
 /**
- * Base interface for all API
+ * A tag interface to indicate that a class is a CloudRaidAPI.
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
