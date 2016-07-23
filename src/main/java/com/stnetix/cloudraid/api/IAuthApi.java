@@ -1,7 +1,5 @@
 package com.stnetix.cloudraid.api;
 
-import com.stnetix.cloudraid.model.AccessToken;
-
 /**
  * API for authentification client on CloudRaid service
  *

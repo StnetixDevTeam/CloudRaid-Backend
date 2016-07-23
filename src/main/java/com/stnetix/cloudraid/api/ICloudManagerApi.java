@@ -1,8 +1,8 @@
 package com.stnetix.cloudraid.api;
 
-import com.stnetix.cloudraid.model.ExternalCloudSettings;
-import com.stnetix.cloudraid.model.ExternalCloud;
-import com.stnetix.cloudraid.model.User;
+import com.stnetix.cloudraid.transport.ExternalCloudSettings;
+import com.stnetix.cloudraid.transport.ExternalCloud;
+import com.stnetix.cloudraid.core.User;
 
 import java.util.List;
 

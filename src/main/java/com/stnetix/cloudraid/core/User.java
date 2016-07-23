@@ -1,4 +1,6 @@
-package com.stnetix.cloudraid.model;
+package com.stnetix.cloudraid.core;
+
+import com.stnetix.cloudraid.transport.ExternalCloud;
 
 import java.util.List;
 

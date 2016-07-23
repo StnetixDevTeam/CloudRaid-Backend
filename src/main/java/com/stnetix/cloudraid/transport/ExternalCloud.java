@@ -1,4 +1,6 @@
-package com.stnetix.cloudraid.model;
+package com.stnetix.cloudraid.transport;
+
+import com.stnetix.cloudraid.core.CloudObject;
 
 import java.net.URL;
 
@@ -7,12 +9,12 @@ import java.net.URL;
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
-public abstract class ExternalCloud extends CloudObject{
+public abstract class ExternalCloud extends CloudObject {
     private ExternalCloudSettings settings;
 
     public ExternalCloud(URL cloudUrl, SupportedClouds cloudType) {
         super();
-        settings = new ExternalCloudSettings(cloudUrl, cloudType);
+        settings = new ExternalCloudSettings(cloudUrl, cloudType, "", "");
     }
 
     public ExternalCloud(ExternalCloudSettings settings) {

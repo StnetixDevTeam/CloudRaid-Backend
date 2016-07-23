@@ -1,4 +1,4 @@
-package com.stnetix.cloudraid.model;
+package com.stnetix.cloudraid.transport;
 
 /**
  * Supported cloud type

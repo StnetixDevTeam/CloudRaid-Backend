@@ -1,7 +1,7 @@
 package com.stnetix.cloudraid.api;
 
 import com.codahale.metrics.MetricSet;
-import com.stnetix.cloudraid.model.CloudObject;
+import com.stnetix.cloudraid.core.CloudObject;
 
 /**
  * API for collect statistic info

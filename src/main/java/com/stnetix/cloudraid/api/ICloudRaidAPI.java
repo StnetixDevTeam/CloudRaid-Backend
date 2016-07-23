@@ -7,5 +7,4 @@ package com.stnetix.cloudraid.api;
  */
 public interface ICloudRaidAPI {
     int version = 1;
-    //FIXME:
 }

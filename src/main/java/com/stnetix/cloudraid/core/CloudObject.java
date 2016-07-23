@@ -1,4 +1,4 @@
-package com.stnetix.cloudraid.model;
+package com.stnetix.cloudraid.core;
 
 import com.codahale.metrics.MetricSet;
 
@@ -14,7 +14,7 @@ public abstract class CloudObject {
     private MetricSet metrics;
 
     public CloudObject() {
-        this.uuid = UUID.randomUUID();
+        this.uuid = UUID.fromString("0");
     }
 
     public CloudObject(UUID uuid) {

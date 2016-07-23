@@ -1,11 +1,9 @@
-package com.stnetix.cloudraid.model;
+package com.stnetix.cloudraid.transport;
 
+import com.stnetix.cloudraid.api.AccessToken;
 import com.stnetix.cloudraid.util.Crypto;
 
-import java.io.UnsupportedEncodingException;
 import java.net.URL;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 /**
  * Settings by external clouds

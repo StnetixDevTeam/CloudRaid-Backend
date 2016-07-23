@@ -1,5 +1,7 @@
 package com.stnetix.cloudraid.api;
 
+import com.stnetix.cloudraid.api.ICloudRaidAPI;
+
 /**
  * API for usage EFS
  *

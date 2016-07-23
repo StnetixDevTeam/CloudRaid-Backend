@@ -1,4 +1,4 @@
-package com.stnetix.cloudraid.model;
+package com.stnetix.cloudraid.api;
 
 /**
  * oAuth2 Access Token
