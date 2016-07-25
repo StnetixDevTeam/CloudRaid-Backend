@@ -6,6 +6,6 @@ package com.stnetix.cloudraid.api;
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
 public interface IAuthApi extends ICloudRaidAPI {
-    AccessToken getAuthToken(); //FIXME: param?
-    boolean logout(AccessToken token);
+    CloudRaidAccessToken getAuthToken(); //FIXME: param?
+    boolean logout(CloudRaidAccessToken token);
 }

@@ -1,29 +1,29 @@
-package com.stnetix.cloudraid.api;
+package com.stnetix.cloudraid.transport;
 
 /**
  * oAuth2 Access Token
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
-public class AccessToken {
+public class ExternalCloudAccessToken {
     private String accessToken;
     private int expiresIn;
     private String refreshToken;
     private String rawInfo;
 
-    public AccessToken(String accessToken, int expiresIn, String refreshToken, String rawInfo) {
+    public ExternalCloudAccessToken(String accessToken, int expiresIn, String refreshToken, String rawInfo) {
         this.accessToken = accessToken;
         this.expiresIn = expiresIn;
         this.refreshToken = refreshToken;
         this.rawInfo = rawInfo;
     }
 
-    public AccessToken(String accessToken, int expiresIn) {
+    public ExternalCloudAccessToken(String accessToken, int expiresIn) {
         this.accessToken = accessToken;
         this.expiresIn = expiresIn;
     }
 
-    public AccessToken() {
+    public ExternalCloudAccessToken() {
     }
 
     public String getAccessToken() {

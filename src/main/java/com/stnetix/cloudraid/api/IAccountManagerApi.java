@@ -6,5 +6,5 @@ package com.stnetix.cloudraid.api;
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
 public interface IAccountManagerApi extends ICloudRaidAPI {
-    //FIXME:
+    //FIXME: add methods for management users
 }

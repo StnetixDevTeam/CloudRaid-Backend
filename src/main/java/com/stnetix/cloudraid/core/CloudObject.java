@@ -2,6 +2,7 @@ package com.stnetix.cloudraid.core;
 
 import com.codahale.metrics.MetricSet;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 /**
@@ -9,7 +10,7 @@ import java.util.UUID;
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
-public abstract class CloudObject {
+public class CloudObject implements Serializable{
     private UUID uuid;
     private MetricSet metrics;
 

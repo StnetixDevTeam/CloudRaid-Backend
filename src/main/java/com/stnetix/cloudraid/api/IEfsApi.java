@@ -8,5 +8,5 @@ import com.stnetix.cloudraid.api.ICloudRaidAPI;
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
 public interface IEfsApi extends ICloudRaidAPI {
-    //FIXME:
+    //FIXME: add methods for EFS
 }

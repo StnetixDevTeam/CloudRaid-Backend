@@ -1,6 +1,5 @@
 package com.stnetix.cloudraid.transport;
 
-import com.stnetix.cloudraid.api.AccessToken;
 import com.stnetix.cloudraid.util.Crypto;
 
 import java.net.URL;
@@ -13,7 +12,7 @@ import java.net.URL;
 public class ExternalCloudSettings {
     private URL cloudUrl;
     private SupportedClouds cloudType;
-    private AccessToken token;
+    private ExternalCloudAccessToken token;
     private ConnectionState state;
     private String login;
     private String password;
@@ -41,11 +40,11 @@ public class ExternalCloudSettings {
         this.cloudType = cloudType;
     }
 
-    public AccessToken getToken() {
+    public ExternalCloudAccessToken getToken() {
         return token;
     }
 
-    public void setToken(AccessToken token) {
+    public void setToken(ExternalCloudAccessToken token) {
         this.token = token;
     }
 
