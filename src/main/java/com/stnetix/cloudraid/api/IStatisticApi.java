@@ -10,5 +10,5 @@ import com.stnetix.cloudraid.core.CloudObject;
  */
 public interface IStatisticApi {
     MetricSet getStatByObject(CloudObject object);
-    boolean setStatByObject(CloudObject object, MetricSet metrics);
+    void setStatByObject(CloudObject object, MetricSet metrics);
 }

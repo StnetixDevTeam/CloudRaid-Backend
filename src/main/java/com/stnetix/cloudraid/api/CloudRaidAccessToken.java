@@ -1,7 +1,7 @@
 package com.stnetix.cloudraid.api;
 
 /**
- * oAuth2 Access Token
+ * oAuth2 Access Token for service CloudRaid
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */

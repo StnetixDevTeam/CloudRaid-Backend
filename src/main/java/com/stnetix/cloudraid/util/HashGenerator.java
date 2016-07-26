@@ -15,20 +15,20 @@ import java.security.NoSuchAlgorithmException;
  * @author http://www.codejava.net/coding/how-to-calculate-md5-and-sha-hash-values-in-java
  */
 public class HashGenerator {
-    public static String generateMD5(String message) throws HashGenerationException {
+    public static String generateMD5(String message){
         return hashString(message, "MD5");
     }
 
-    public static String generateSHA1(String message) throws HashGenerationException {
+    public static String generateSHA1(String message){
         return hashString(message, "SHA-1");
     }
 
-    public static String generateSHA256(String message) throws HashGenerationException {
+    public static String generateSHA256(String message){
         return hashString(message, "SHA-256");
     }
 
     private static String hashString(String message, String algorithm)
-            throws HashGenerationException {
+            {
 
         try {
             MessageDigest digest = MessageDigest.getInstance(algorithm);

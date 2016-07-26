@@ -1,9 +1,9 @@
 package com.stnetix.cloudraid.util.exception;
 
 /**
- * Created by Vladislav Gasanov on 25.07.2016.
+ * @author http://www.codejava.net/coding/how-to-calculate-md5-and-sha-hash-values-in-java
  */
-public class HashGenerationException extends Exception {
+public class HashGenerationException extends RuntimeException {
     public HashGenerationException() {
     }
 

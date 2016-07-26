@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.UUID;
 
 /**
- * Abstract base class for any cloud objects
+ * Base class for any cloud objects
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */

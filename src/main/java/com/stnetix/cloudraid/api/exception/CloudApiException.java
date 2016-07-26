@@ -1,7 +1,9 @@
 package com.stnetix.cloudraid.api.exception;
 
 /**
- * Created by Vladislav Gasanov on 23.07.2016.
+ * Exception on some action with CloudRaidAPI
+ *
+ * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
 public class CloudApiException extends Exception {
 }

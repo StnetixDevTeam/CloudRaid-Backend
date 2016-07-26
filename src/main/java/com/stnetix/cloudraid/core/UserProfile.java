@@ -1,6 +1,7 @@
 package com.stnetix.cloudraid.core;
 
-import com.stnetix.cloudraid.util.Crypto;
+import com.stnetix.cloudraid.util.HashGenerator;
+import com.stnetix.cloudraid.util.exception.HashGenerationException;
 
 /**
  * Users profile
@@ -17,7 +18,7 @@ public class UserProfile {
         this.login = login;
         this.nickname = nickname;
         this.email = email;
-        this.password = Crypto.getSha256(password);
+        this.password = HashGenerator.generateSHA256(password);
     }
 
     public String getLogin() {
@@ -49,6 +50,10 @@ public class UserProfile {
     }
 
     public void setPassword(String password) {
-        this.password = Crypto.getSha256(password);
+        try {
+            this.password = HashGenerator.generateSHA256(password);
+        } catch (HashGenerationException e) {
+            e.printStackTrace();
+        }
     }
 }

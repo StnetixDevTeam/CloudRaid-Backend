@@ -1,6 +1,6 @@
 package com.stnetix.cloudraid.transport;
 
-import com.stnetix.cloudraid.util.Crypto;
+import com.stnetix.cloudraid.util.HashGenerator;
 
 import java.net.URL;
 
@@ -21,7 +21,7 @@ public class ExternalCloudSettings {
         this.cloudUrl = cloudUrl;
         this.cloudType = cloudType;
         this.login = login;
-        this.password = Crypto.getSha256(password);
+        this.password = HashGenerator.generateSHA256(password);
     }
 
     public URL getCloudUrl() {
@@ -69,6 +69,6 @@ public class ExternalCloudSettings {
     }
 
     public void setPassword(String password) {
-        this.password = Crypto.getSha256(password);
+        this.password = HashGenerator.generateSHA256(password);
     }
 }
