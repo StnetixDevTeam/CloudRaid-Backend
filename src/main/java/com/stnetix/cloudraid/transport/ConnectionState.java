@@ -1,7 +1,7 @@
 package com.stnetix.cloudraid.transport;
 
 /**
- * State for connection to external cloud
+ * State of external cloud connection
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */

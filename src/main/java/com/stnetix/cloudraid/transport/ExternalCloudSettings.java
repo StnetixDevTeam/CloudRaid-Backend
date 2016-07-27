@@ -5,7 +5,7 @@ import com.stnetix.cloudraid.util.HashGenerator;
 import java.net.URL;
 
 /**
- * Settings by external clouds
+ * Settings of an external cloud
  *
  * @author Cloudraid Dev Team (cloudraid.stnetix.com)
  */
