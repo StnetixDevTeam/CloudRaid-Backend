@@ -39,7 +39,6 @@ public abstract class ExternalCloud extends CloudObject {
      *
      * @return true if connect success and false if get any error
      */
-    abstract public boolean firstConnectWithoutAcsToken();
 
     public ExternalCloudSettings getSettings() {
         return settings;
